@@ -1,0 +1,65 @@
+.main-screen {
+    // background-image: url("./screens/background.png");
+    // background-size: 100%;
+    // background-position-y: 65%;
+    // background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    #reg {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .col:first-child {
+        padding-left: 0;
+        p {
+            width: 68%;
+            margin-bottom: 40px;
+        }
+    }
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    .btn-floating {
+        border: 2px solid white;
+        box-sizing: content-box;
+        overflow: visible;
+        span {
+            position: absolute;
+            z-index: 10;
+            font-size: 1rem;
+            top: 0px;
+            text-transform: none;
+            width: 200px;
+        }
+    }
+    .card .card-content {
+        p.warning-text {
+            display: block;
+            margin: 40px auto;
+            color: rgba(0, 0, 0, 0.9);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        .btn {
+            height: 45px;
+            line-height: 45px;
+            width: 100%;
+            border-radius: 25px;
+            text-transform: none;
+            font-weight: bold;
+        }
+    }
+}
+
+.parallax-container {
+    height: 100vh;
+    overflow: visible;
+}
+.parallax-container .parallax {
+    top: 35vh;
+}

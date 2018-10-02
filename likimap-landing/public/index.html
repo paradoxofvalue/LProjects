@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/manifest.json">
+  <!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
+  <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+  <!-- <meta name="theme-color" content="#ffffff"> -->
+  <meta property="og:image" content="./images/ogImage.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="750" />
+  <meta property="og:image:height" content="750" />
+  <meta property="og:site_name" content="Likimap" />
+  <meta property="og:description" content="Поиск недвижимости без посредников" />
+  <title>Likimap</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/index.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126739268-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126739268-1');
+  </script>
+  <script>
+    var isAndroid = /(android)/i.test(navigator.userAgent);
+    var isiOS = /(iPad|iPhone|iPod)/i.test(navigator.userAgent);
+    isAndroid 
+      ? location.replace('//play.google.com/store/apps/details?id=com.avezorsoft.likimap')
+      : (isiOS 
+          ? location.replace('//itunes.apple.com/app/likimap/id1431729050?mt=8') 
+          : ''
+        );      
+  </script> 
+</head>
+
+<body>
+  <header class="container">
+    <div class="content-wrapper">
+      <img src="./images/logo.svg" alt="likimap-logo" class="logo">
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="container">
+      <div class="content">
+        <div class="content-wrapper">
+          <div class="content__left">
+            <h1>Поиск недвижимости
+              без посредников</h1>
+            <p>Likimap - приложение с тысячами актуальных
+              бесплатных объявлений о продаже, покупке
+              и аренде недвижимости.</p>
+            <div class="buttons">
+              <a href="//play.google.com/store/apps/details?id=com.avezorsoft.likimap" target="_blank"><img src="./images/google_play.svg"
+                  alt="google-play-icon"></a>
+              <a href="//itunes.apple.com/app/likimap/id1431729050?mt=8" target="_blank"><img src="./images/app-store.svg"
+                  alt="app-store-icon"></a>
+            </div>
+          </div>
+          <div class="content__right">
+            <div class="circle xs"></div>
+            <div class="circle s"></div>
+            <div class="circle m"></div>
+            <div class="circle l"></div>
+            <div class="phone-screen-1">
+              <a href="//www.youtube.com/watch?v=5JB2VRYpGQE" target="_blank">
+                <p>Смотреть видео</p>
+              </a></div>
+            <div class="phone-screen-2"></div>
+            <div class="icon pencil"></div>
+            <div class="icon place"></div>
+            <div class="icon house"></div>
+            <div class="icon android"></div>
+            <div class="icon share"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./images/blue-logo.svg" alt="likimap-logo" class="logo">
+  </div>
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="info-section">
+        <h2>Функционал</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="./images/thumb-up.svg" alt="thumb-up">
+            <div class="card__info">
+              <h4>Бесплатные объявления</h4>
+              <p>Размещай любое количество объявлений абсолютно бесплатно.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/search.svg" alt="search">
+            <div class="card__info">
+              <h4>Простой поиск</h4>
+              <p>Многофункциональный и понятный поиск
+                с удобными фильтрами.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/without_intermediaries.svg" alt="without intermediaries">
+            <div class="card__info">
+              <h4>Без посредников</h4>
+              <p>Риэлтор больше не нужен. Продвигай свое объявление в топ, используй рассылку по областям Украины и его
+                заметит каждый.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/sending.svg" alt="handshake">
+            <div class="card__info">
+              <h4>Рассылка по области и всей Украине</h4>
+              <p>Продвигай свое объявление в топ, используй
+                рассылку по областям всей Украины и его
+                заметит каждый.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/actual.svg" alt="actual">
+            <div class="card__info">
+              <h4>Актуальные объявления</h4>
+              <p>Все объекты проверяются вручную в кратчайшие сроки. У нас вы не встретите риэлторов под видом
+                собственника или неправдивые фото объекта.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/hammer.svg" alt="hammer">
+            <div class="card__info">
+              <h4>Продажа недвижимости с молотка</h4>
+              <p>Установи стартовую цену на свой объект и смотри, кто предложит больше.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/app.svg" alt="app">
+            <div class="card__info">
+              <h4>В самом быстром приложении</h4>
+              <p>С приложением Likimap - продавай недвижимость в 1 клик. По данным теста Appium приложение набирает 89
+                баллов в тесте на скорость работы и оптимизацию.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <div class="footer-wrapper container">
+      <img src="./images/logo.svg" alt="likimap-logo">
+      <p>2018 Все права защищены &copy</p>
+      <a href="mailto:info@likimap.com" class="email">info@likimap.com</a>
+    </div>
+  </footer>
+</body>
+
+</html>

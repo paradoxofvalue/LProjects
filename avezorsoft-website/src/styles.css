@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import 'normalize.css';
+* {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+}
+
+@media screen and (min-width: 1200px) {
+  .owl-item {
+    width: 370px!important;
+  }
+}
+
+.owl-carousel .owl-stage {
+  left: 230px;
+}
+@media screen and (max-width: 1100px) {
+  .owl-carousel .owl-stage {
+    left: 0;
+  }
+}
+
+
+
+.owl-item:nth-child(even) .card {
+  background-color: #101010!important;
+}
+.owl-item:nth-child(even) .card span {
+  color: rgba(255,255,255,0.2)!important;
+}
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: white;
+  display: flex;
+  border-radius: 20px;
+  background-color: #ef3340;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  transition: 0.3s ease 0s;
+  text-align: center;
+  
+}
+.owl-carousel .owl-nav button.owl-prev {
+  margin-right: 30px;
+}
+.owl-carousel .owl-nav button.owl-prev.disabled,
+.owl-carousel .owl-nav button.owl-next.disabled {
+  background-color: #bab6b7;
+  cursor: not-allowed;
+}
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next span {
+  font-size: 3rem;
+  line-height: 40px;
+  position: relative;
+  top: -3px;
+  width: 40px;
+  text-align: center;
+}
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #ef3340;
+}
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: #ef3340;
+}
+.mat-form-field .mat-input-element {
+  color: white;
+}
+
+::selection {
+  background: #1010105a; 
+  color: #ef3340; 
+}

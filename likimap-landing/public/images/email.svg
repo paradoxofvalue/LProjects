@@ -1,0 +1,11 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.5 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>app_landing</title>
+  <path class="cls-1" d="M15.75,0h-14A1.75,1.75,0,0,0,0,1.75v10.5A1.76,1.76,0,0,0,1.75,14h14a1.76,1.76,0,0,0,1.75-1.75V1.75A1.76,1.76,0,0,0,15.75,0Zm0,3.5-7,4.38-7-4.38V1.75l7,4.38,7-4.38Z"/>
+</svg>

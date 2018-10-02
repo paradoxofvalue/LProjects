@@ -1,0 +1,27 @@
+<section id="dreamteam">
+  <div>
+    <h2>Dream team</h2>
+    <div class="team">
+      <div class="member" *ngFor="let item of team" [ngClass]="{'visible': item.visible}">
+        <div class="image">
+          <img src="{{item.image}}" alt="{{item.name}}">
+        </div>
+        <div class="desc">
+          <h3>
+            <span *ngFor="let letter of item.name; index as i" [style.animationDelay]="i * 0.05 + 's'">{{letter}}</span>
+          </h3>
+          <p>
+            <span *ngFor="let letter of item.position; index as i" [style.animationDelay]="i * 0.05 + 's'">{{letter}}</span>
+          </p>
+        </div>
+
+        <div *ngIf="item.message" class="message">
+          <p>{{item.message}}</p>
+          <a *ngIf="item.linkedin" href="{{item.linkedin}}">
+            <div class="linkedin"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

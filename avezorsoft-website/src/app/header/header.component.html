@@ -1,0 +1,46 @@
+<header [ngClass]="{'fixed': isFixed, 'collapsed': isVisibleOnMain}">
+  <div>
+    <a href="/#main" (click)="eventFunction('', $event)">
+      <img src="../../assets/images/avezorsoft.svg" alt="Avezorsoft logo"> avezor{{'{'}}software{{'}'}}
+    </a>
+
+    <nav>
+      <ul>
+        <li *ngFor="let item of navList">
+          <a (click)="eventFunction(item, $event)" [href]="item.link" [ngClass]="{'active': item.isActive}">{{item.name}}</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="#sendmeportfolio" (click)="togglePopup($event)">Send me portfolio</a>
+  </div>
+</header>
+
+<div class="popup" [ngClass]="{'visible': popup}">
+  <!-- <h2>Send me portfolio</h2> -->
+  <button class="close" (click)="togglePopup()">&times;</button>
+
+  <form class="form" (ngSubmit)="onSubmit()" *ngIf="!pending">
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Email" [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+      <!-- <mat-hint>Required *</mat-hint> -->
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is
+        <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <div class="g-recaptcha" id="captcha-modal" data-sitekey="" style="margin: 0 auto 30px; display: none;"></div>
+
+    <button mat-button type="submit" id="captcha-modal-submit" style="">Send</button>
+  </form>
+
+  <div class="message" *ngIf="pending">
+    <h3>{{submitMessage}}</h3>
+    <div class="status">{{submitStatus}}</div>
+  </div>
+
+</div>

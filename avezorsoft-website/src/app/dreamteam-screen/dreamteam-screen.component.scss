@@ -1,0 +1,408 @@
+section {
+  position: relative;
+  padding: 100px 0;
+  &>div {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 55px;
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 4rem;
+      margin: 0;
+      &:after {
+        content: '.';
+        font-size: 5rem;
+        color: #ef3340;
+        padding-left: 3px;
+        position: relative;
+      }
+    }
+    .team {
+      padding: 50px 100px;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      .member {
+        display: flex;
+        align-items: center;
+        transition: .3s ease 0s;
+        margin-bottom: 60px;
+        position: relative;
+        &:hover {
+          .image {
+            img {
+              transform: rotateZ(-30deg);
+            }
+          }
+          .message {
+            opacity: 1;
+          }
+        }
+        .image {
+          width: 170px;
+          height: 170px;
+          padding: 30px;
+          box-sizing: border-box;
+          border-radius: 50%;
+          background-color: #ef3340;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin-right: 20px;
+          img {
+            position: relative;
+            top: 20px;
+            width: 100%;
+            transform: rotateZ(0deg);
+            transform-origin: 50% 40%;
+            transition: .3s ease 0s;
+          }
+          transform: scale(0);
+          transition: .5s ease .2s;
+        }
+        .desc {
+          position: relative;
+          top: -40px;
+          h3 {
+            position: absolute;
+            display: flex;
+            span {
+              font-size: 2.5rem;
+              opacity: 0;
+              margin: 0;
+              font-family: 'Poppins', sans-serif;
+              // animation-name: dreamTeamAnimation;
+              animation-delay: 0s;
+              animation-duration: 1s;
+              animation-fill-mode: forwards;
+              animation-timing-function: ease;
+              transform: translateZ(25px);
+              transform-origin: 50% 50% 10px;
+            }
+          }
+          p {
+            position: absolute;
+            top: 40px;
+            width: 200px;
+            span {
+              color: #ef3340;
+              margin: 0;
+              opacity: 0;
+
+              font-size: 1.2rem;
+              font-family: 'Poppins', sans-serif;
+              // animation-name: dreamTeamAnimation;
+              animation-delay: 0s;
+              animation-duration: 2s;
+              animation-fill-mode: forwards;
+              animation-timing-function: ease;
+              transform: translateZ(25px);
+              transform-origin: 50% 50% 10px;
+            }
+            
+          }
+        }
+        .message {
+          position: absolute;
+          opacity: 0;
+          text-align: center;
+          transition: .3s ease 0s; // height: 140px;
+          width: 200px;
+          justify-content: center;
+          align-items: center;
+          background-color: #101010;
+          padding: 20px 40px;
+          color: white;
+          border-radius: 50%;
+          top: -105px;
+          left: 170px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1; // &:after {
+          //   content: '';
+          //   position: absolute;
+          //   bottom: 11px;
+          //   width: 0;
+          //   height: 0;
+          //   border-bottom: 50px solid #101010;
+          //   border-right: 50px solid transparent;
+          //   left: 10px;
+          //   z-index: 0;
+          // }
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            background-image: url('../../assets/images/cloud-before.png');
+            background-size: cover;
+            height: 30px;
+            width: 40px;
+            left: -4px;
+            bottom: 10px;
+            z-index: 0;
+          }
+          a {
+            position: absolute;
+            display: flex;
+            bottom: -10px;
+            right: 10px;
+            .linkedin {
+              height: 50px;
+              width: 50px;
+              border-radius: 50%;
+              background-repeat: no-repeat;
+              background-position: top;
+              background-size: 75%;
+              background-image: url('../../assets/images/linkedin-icon.png');
+              background-color: #9e9e9e;
+              transition: .3s ease 0s;
+            }
+            &:hover {
+              .linkedin {
+                background-color: #ef3340;
+              }
+            }
+          }
+        }
+        &:nth-child(even) {
+          justify-content: flex-end;
+          .desc {
+            left: -200px;
+          }
+          .image {
+            position: relative;
+            left: -200px;
+          }
+          .message {
+            left: auto;
+            right: -55px;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &.visible {
+          .image {
+            transform: scale(1);
+          }
+          .desc {
+            h3 {
+              span {
+                animation-name: dreamTeamAnimation
+              }
+            }
+            p {
+              span {
+                animation-name: dreamTeamAnimation;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  section {
+    div {
+      .team {
+        padding: 50px 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .member {
+          width: 50%;
+          &:nth-child(even) {
+            justify-content: flex-start;
+            .image {
+              left: auto;
+            }
+            .desc {
+              left: auto;
+            }
+            .message {
+              top: -105px;
+              left: 170px;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    div {
+      .team {
+        .member {
+          text-align: right;
+          position: relative;
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto;
+          justify-content: space-between;
+          &:nth-child(even) {
+            justify-content: space-between;
+            .message {
+              left: 150px;
+            }
+          }
+          .desc {
+            width: 200px;
+            p {
+              width: auto;
+            }
+          }
+          .message {
+            left: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    div {
+      .team {
+        .member {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    div {
+      padding-left: 10px;
+      padding-right: 10px;
+      h2 {
+        text-align: center;
+        font-size: 3rem;
+      }
+      .team {
+        .member {
+          .desc {
+            top: auto;
+            width: 70%;
+            h3 {
+              position: relative;
+              display: block;
+              margin-bottom: 0;
+              span {
+              }
+            }
+            p {
+              position: relative;
+              display: block;
+              top: auto;
+              margin: 0;
+              span {
+              }
+
+            }
+          }
+          .image {
+            padding: 2%;
+            width: 30%;
+            height: calc(30vw - 20px);
+            img {
+              top: 15%;
+            }
+          }
+          &:nth-child(even) {
+            .message {
+              left: 30%;
+            }
+          }
+          .message {
+            left: 30%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  section {
+    div {
+      padding-left: 10px;
+      padding-right: 10px;
+      h2 {
+        text-align: center;
+        font-size: 3rem;
+      }
+      .team {
+        .member {
+          .desc {
+            top: auto;
+            width: 70%;
+            h3 {
+              position: relative;
+              display: block;
+              margin-bottom: 0;
+              span {
+                font-size: 1.5rem;
+              }
+            }
+            p {
+              position: relative;
+              display: block;
+              top: auto;
+              margin: 0;
+              span {
+                font-size: .8rem;
+              }
+
+            }
+          }
+          .image {
+            padding: 2%;
+            width: 30%;
+            height: calc(30vw - 20px);
+            img {
+              top: 15%;
+            }
+          }
+          &:nth-child(even) {
+            .message {
+              left: 30%;
+            }
+          }
+          .message {
+            left: 30%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes dreamTeamAnimation {
+  from {
+    opacity: 0;
+    transform: rotateX(0deg);
+  }
+  49% {
+    opacity: 0;
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  51% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg); // transform: translateY(5px);
+  }
+}

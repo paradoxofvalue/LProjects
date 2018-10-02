@@ -1,0 +1,30 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: transparent;
+      }
+
+      .cls-2 {
+        fill: url(#Безымянный_градиент_2);
+      }
+
+      .cls-3 {
+        fill: url(#Безымянный_градиент_2-2);
+      }
+    </style>
+    <linearGradient id="Безымянный_градиент_2" data-name="Безымянный градиент 2" x1="12" y1="24.27" x2="15.53" y2="24.27" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#608ad8"/>
+      <stop offset="1" stop-color="#3a478f"/>
+    </linearGradient>
+    <linearGradient id="Безымянный_градиент_2-2" x1="16.58" y1="21" x2="30" y2="21" xlink:href="#Безымянный_градиент_2"/>
+  </defs>
+  <title>app_landing</title>
+  <g>
+    <circle class="cls-1" cx="21" cy="21" r="21"/>
+    <g>
+      <path class="cls-2" d="M12,18.54h3.53V30H12Z"/>
+      <path class="cls-3" d="M29.69,22A1.64,1.64,0,0,0,28,20.32h.35A1.62,1.62,0,0,0,30,18.74a1.64,1.64,0,0,0-1.65-1.65H24V13.61A1.62,1.62,0,0,0,22.43,12a1.64,1.64,0,0,0-1.65,1.65V14a6.18,6.18,0,0,1-4.05,5.81l-.15.06v8.64L18.78,30h8.67a1.61,1.61,0,0,0,1.61-1.58,1.64,1.64,0,0,0-1.64-1.65h.34a1.62,1.62,0,0,0,1.62-1.58,1.64,1.64,0,0,0-1.65-1.64h.34A1.63,1.63,0,0,0,29.69,22Z"/>
+    </g>
+  </g>
+</svg>

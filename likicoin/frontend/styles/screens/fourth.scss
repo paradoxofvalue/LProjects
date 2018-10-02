@@ -1,0 +1,62 @@
+#projects {
+    overflow-x: hidden;
+}
+ .screen {
+    .row {
+        &:nth-child(odd) {
+            // background-color: red;
+            .text {
+                margin-left: 55px;
+            }
+        }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            .img {
+                margin-left: 55px;
+                img {
+                    left: 5%;
+                }
+            }
+        }
+        .img {
+            margin: 0;
+            padding: 0;
+            align-self: flex-start;
+            position: relative;
+            margin-bottom: 25px;           
+            
+            & img {
+                width: 150%;
+                left: -55%;
+                position: relative;
+                top: 0;
+            }
+        }
+        .text {
+            h4 {
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #00d6a3;
+                text-transform: uppercase;
+            }
+            h3 {
+                font-size: 2.4em;
+                text-transform: none;
+                text-align: left;
+            }
+            p {
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 1em;
+            }
+            a {
+                border-radius: 25px;
+                text-transform: none;
+                padding-left: 35px;    
+                padding-right: 35px;
+                font-weight: bold; 
+                height: 45px;
+                line-height: 45px;
+            }
+        }
+    }
+}

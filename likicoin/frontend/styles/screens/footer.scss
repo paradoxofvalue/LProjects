@@ -1,0 +1,14 @@
+footer {
+    padding: 60px 0;
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        span {
+            align-self: flex-end;
+        }
+    }
+    img {
+        width: 50px;
+    }
+}

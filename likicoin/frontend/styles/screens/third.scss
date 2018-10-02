@@ -1,0 +1,64 @@
+.screen {
+    .row {
+        .reasons {
+            text-align: center;
+            h3 {
+                color: #00d6a3;
+                text-transform: uppercase;
+                font-size: 1.3em;
+                font-weight: 400;
+                text-align: center;
+            }
+            h4 {
+                font-size: 2.4em;
+                font-weight: 300;
+                margin-bottom: 40px;
+            }
+            p {
+                color: rgba(0, 0, 0, 0.8);
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .pay {
+            margin: 0; 
+            position: relative;
+            padding-top: 50px;
+            align-self: flex-start;
+            h3 {
+                font-size: 1em;
+                text-transform: uppercase;
+                text-align: left;
+                font-weight: bold;
+            }
+            p {
+                font-size: 1em;
+            }
+            &:before {
+                content: '';
+                height: 40px;
+                width: 50px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+            &:nth-child(1) {
+                &:before {
+                    background-image: url('./screens/services.png');
+                }
+            }
+            &:nth-child(2):before {
+                background-image: url('./screens/rieltors.png');
+            }
+            &:nth-child(3):before {
+                background-image: url('./screens/builders.png');
+            }
+            &:nth-child(4):before {
+                background-image: url('./screens/rent.png');
+            }
+        }
+    }
+}

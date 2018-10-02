@@ -1,0 +1,55 @@
+<section id="contactus">
+  <div>
+    <h2>Contact us</h2>
+
+    <form class="form" (ngSubmit)="onSubmit()" *ngIf="!pending">
+      <div>
+        <mat-form-field class="half-width">
+          <input matInput placeholder="Name" [formControl]="nameFormControl" [errorStateMatcher]="matcher">
+          <!-- <mat-hint>Required *</mat-hint> -->
+          <mat-error *ngIf="!nameFormControl.hasError('required')">
+            Please enter your name
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Name is
+            <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="half-width">
+          <input matInput placeholder="Email" [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+          <!-- <mat-hint>Required *</mat-hint> -->
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is
+            <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+
+      <mat-form-field class="full-width">
+        <textarea matInput placeholder="Leave a message" [formControl]="messageFormControl" [errorStateMatcher]="matcher"></textarea>
+        <mat-error *ngIf="!messageFormControl.hasError('required')">
+          Please enter a message
+        </mat-error>
+        <mat-error *ngIf="messageFormControl.hasError('required')">
+          Message is
+          <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <div class="g-recaptcha" id="captcha" data-sitekey="" style="margin: 0 auto 30px; display: none;"></div>
+
+
+      <button mat-button type="submit" id="captcha-submit" >Send message</button>
+    </form>
+
+    <div class="message" *ngIf="pending">
+      <h3>{{submitMessage}}</h3>
+      <div class="status">{{submitStatus}}</div>
+    </div>
+  </div>
+</section>

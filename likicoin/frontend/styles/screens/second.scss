@@ -1,0 +1,28 @@
+.screen {
+    .row {
+        display: flex;
+        align-items: center;
+        h3 {
+            font-size: 2.4em;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-align: right;
+        
+            span {
+                font-weight: bold;
+                color: #00d6a3;
+            }
+        }
+        p {
+            font-weight: 300;
+            font-size: 1.5em;
+            line-height: 1.5em;
+            text-align: justify;
+        }
+        & .col:last-child {
+            margin-right: 0;
+            padding-right: 0;
+        }
+    }
+    
+}

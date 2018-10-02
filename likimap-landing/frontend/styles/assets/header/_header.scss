@@ -1,0 +1,21 @@
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  
+  .content-wrapper {
+    display: flex;
+    padding: 27px 0;
+  
+    text-align: left;
+    .logo {
+      height: 33px;
+      opacity: 1;
+      transition: .3s ease;
+      &:hover,
+      &:focus {
+        opacity: .8;
+      }
+    }
+  }
+}

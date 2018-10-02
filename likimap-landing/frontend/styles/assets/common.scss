@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: $font-size $font-stack;
+  color: #fff;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+p {
+  opacity: .6;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: $max-w;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 15px;
+}
+

@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Likibank</title>
+
+  <link href="./styles/index.css" rel="stylesheet">
+  <script src="./materialize-src/js/bin/materialize.min.js"></script>
+  <script src="./js/page.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="utf-8">
+</head>
+
+<body class="page">
+  <header class="navbar-fixed ">
+    <nav class="white">
+      <div class="nav-wrapper container black-text">
+        <a href="#!" class="brand-logo black-text">
+          <img src="./styles/all/likibank.png" alt="Likibank logo">
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="hide-on-med-and-down">
+          <li class="active">
+            <a href="#start" class="black-text">Старт</a>
+          </li>
+          <li>
+            <a href="#how" class="black-text">Как это работает</a>
+          </li>
+          <li>
+            <a href="#buy" class="black-text">Как купить</a>
+          </li>
+          <li>
+            <a href="#stages" class="black-text">Этапы развёртывания</a>
+          </li>
+        </ul>
+        <a href="#reg" class="waves-effect waves-light btn hide-on-med-and-down">Зарегистрироваться</a>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="#start">Старт</a>
+      </li>
+      <li>
+        <a href="#how">Как это работает</a>
+      </li>
+      <li>
+        <a href="#buy">Как купить</a>
+      </li>
+      <li>
+        <a href="#stages">Этапы развёртывания</a>
+      </li>
+      <li>
+        <a href="#reg" class="waves-effect waves-light btn">Зарегистрироваться</a>
+      </li>
+    </ul>
+  </header>
+
+  <div class="first-screen" id="start">
+    <div style="background: rgba(0, 0, 0, 0.6);width:100%;height: 100vh;display: flex;align-items: center;">
+      <section class="container">
+        <div class="row">
+          <div class="col m8 s12 ">
+            <h1>Приобрести недвижимость анонимно на Likimap.com</h1>
+            <p>
+              С помощью Bank Likimap вы сможете покупать недвижимость, которая указанна на сайте likimap.com со специальной пометкой “Купить
+              анонимно”.
+            </p>
+            <a href="#how" class="btn-floating btn-small waves-effect waves-light transparent left">
+              <i class="material-icons">arrow_downward</i>
+              <span>Узнать больше</span>
+            </a>
+          </div>
+          <div class="col m4  hide-on-small-and-down" id="reg">
+            <div class="card card-custom white">
+              <div class="card-content white-text">
+                <h5 class="black-text">Начните сейчас</h5>
+                <input id="name" type="text" class="validate" placeholder="Ваше имя" maxlength="25">
+                <input id="phone" type="text" class="validate" placeholder="Телефон" maxlength="25">
+                <input id="email" type="email" class="validate" placeholder="E-mail адрес" maxlength="25">
+                <p class="warning-text">
+                  Нажимая кнопку Зарегистрироваться, я подтверждаю согласие с условиями
+                </p>
+                <button class="waves-effect waves-light btn">Зарегистрироваться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="second" id="how">
+    <div class="screen container ">
+      <h2>Как это работает</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-content">
+            <i>
+              <img src="./styles/all/1.png" alt="">
+            </i>
+            <h6 class="card-title">Вы покупаете криптовалюту</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <i>
+              <img src="./styles/all/2.png" alt="">
+            </i>
+            <h6 class="card-title">Мы выкупаем от застройщика строительные комплексы на уровне фундамента</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <i>
+              <img src="./styles/all/3.png" alt="">
+            </i>
+            <h6 class="card-title">Вы покупаете со скидкой 10% недвижимость за криптовалюту</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <i>
+              <img src="./styles/all/4.png" alt="">
+            </i>
+            <h6 class="card-title">Вы либо анонимный собственник либо официально вступаете в собственность</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <i>
+              <img src="./styles/all/5.png" alt="">
+            </i>
+            <h6 class="card-title">Вся информация хранится о собственности недвижимости в блокчейне</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <i>
+              <img src="./styles/all/6.png" alt="">
+            </i>
+            <h6 class="card-title">В любой момент вы можете совершить обмен или продажу в банке недвижимости</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="third" id="buy">
+    <div class="screen container">
+      <h2>Чтобы купить недвижимость анонимно необходимо</h2>
+      <p>Купленную недвижимость можно продать или обменять на другую в любой момент в банке недвижимости</p>
+      <div class="steps">
+        <div class="step">
+          <span class="step__count">01</span>
+          <h3>ЗАРЕГИСТРИРОВАТЬСЯ</h3>
+          <p>Чтобы начать, вам необходимо завершить регистрацию на данном сайте.</p>
+        </div>
+
+        <div class="step">
+          <span class="step__count">02</span>
+          <h3>ПРОЙТИ ВЕРИФИКАЦИЮ</h3>
+          <p>
+            После регистрации на сайте bank.likimap.com ваш аккаунт пройдёт проверку на пдлинность.
+          </p>
+        </div>
+
+        <div class="step">
+          <span class="step__count">03</span>
+          <h3>ПОПОЛНИТЬ СЧЁТ</h3>
+          <p>
+            Для совершения операций на сайте, вам будет необходимо пополнить счёт в нашей системе.
+          </p>
+        </div>
+
+        <div class="step">
+          <span class="step__count">04</span>
+          <h3>ВЫБРАТЬ НЕДВИЖИМОСТЬ</h3>
+          <p>
+            Выберите интересующую вас недвижимость из обширного списка на сайте likimap.com
+          </p>
+        </div>
+        <div class="step">
+          <span class="step__count">05</span>
+          <h3>КУПИТЬ НЕДВИЖИМОСТЬ</h3>
+          <p>
+            Приобретайте недвижимость анонимно, или со вступлением в право собственности.
+          </p>
+        </div>
+        <div class="step">
+          <span class="step__count">06</span>
+          <h3>ПОЛУЧИТЬ ДОКУМЕНТЫ</h3>
+          <p>
+            Получите необходимые документы о владении недвижимостью у представителя Likimap.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fourth" id="stages">
+    <div class="screen container">
+      <h2>Этапы развёртывания</h2>
+      <div class="stages">
+        <div class="stage">
+          <span class="stage__description">
+            Анализ рынка недвижимости
+          </span>
+          <span class="stage__count">
+            1
+          </span>
+          <div class="stage__date">
+            <span class="stage__quarter">4й КВАРТАЛ</span>
+            2016
+          </div>
+        </div>
+        <div class="stage">
+          <div class="stage__date">
+            <span class="stage__quarter">1й КВАРТАЛ</span>
+            2017
+          </div>
+          <span class="stage__count">
+            2
+          </span>
+
+          <span class="stage__description">
+            Написание спецификации для создания проекта Likimap
+          </span>
+        </div>
+
+        <div class="stage">
+          <span class="stage__description">
+            Создание платформы для продажи/аренды недвижимости Likimap
+          </span>
+          <span class="stage__count">
+            3
+          </span>
+          <div class="stage__date">
+            <span class="stage__quarter">2й КВАРТАЛ</span>
+            2017
+          </div>
+        </div>
+        <div class="stage">
+          <div class="stage__date">
+            <span class="stage__quarter">3й КВАРТАЛ</span>
+            2017
+          </div>
+          <span class="stage__count">
+            4
+          </span>
+
+          <span class="stage__description">
+            Релиз проекта Likimap
+          </span>
+        </div>
+
+        <div class="stage">
+          <span class="stage__description">
+            Добавление в платформу Likimap новых Стран
+          </span>
+          <span class="stage__count">
+            5
+          </span>
+          <div class="stage__date">
+            <span class="stage__quarter">4й КВАРТАЛ</span>
+            2017
+          </div>
+        </div>
+        <div class="stage">
+          <div class="stage__date">
+            <span class="stage__quarter">1й КВАРТАЛ</span>
+            2018
+          </div>
+          <span class="stage__count">
+            6
+          </span>
+
+          <span class="stage__description">
+            Создание блокчейна для проекта Likimap
+          </span>
+        </div>
+
+        <div class="stage">
+          <span class="stage__description">
+            Создание криптовалюты
+          </span>
+          <span class="stage__count">
+            7
+          </span>
+          <div class="stage__date">
+            <span class="stage__quarter">2й КВАРТАЛ</span>
+            2018
+          </div>
+        </div>
+        <div class="stage">
+          <div class="stage__date">
+            <span class="stage__quarter">3й КВАРТАЛ</span>
+            2018
+          </div>
+          <span class="stage__count">
+            8
+          </span>
+
+          <span class="stage__description">
+            Разработка функционала для строительных компаний
+          </span>
+        </div>
+
+        <div class="stage">
+          <span class="stage__description">
+            Продажа криптовалюты
+          </span>
+          <span class="stage__count">
+            9
+          </span>
+          <div class="stage__date">
+            <span class="stage__quarter">4й КВАРТАЛ</span>
+            2018
+          </div>
+        </div>
+        <div class="stage">
+          <div class="stage__date">
+            <span class="stage__quarter">1й КВАРТАЛ</span>
+            2019
+          </div>
+          <span class="stage__count">
+            10
+          </span>
+
+          <span class="stage__description">
+            Покупка недвижимости за криптовалюту
+          </span>
+        </div>
+
+        <div class="stage">
+          <span class="stage__description">
+            Создание Банка недвижимости
+          </span>
+          <span class="stage__count">
+            11
+          </span>
+          <div class="stage__date">
+            <span class="stage__quarter">2й КВАРТАЛ</span>
+            2019
+          </div>
+        </div>
+        <div class="stage">
+          <div class="stage__date">
+            <span class="stage__quarter">3й КВАРТАЛ</span>
+            2019
+          </div>
+          <span class="stage__count">
+            12
+          </span>
+
+          <span class="stage__description">
+            Релиз Банка недвижимости
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <a href="#">
+        <img src="./styles/all/likibank.png" alt="Likibank logo" width="150px">
+      </a>
+      <span>2018 Все права защищены&COPY;</span>
+    </div>
+
+  </footer>
+</body>
+
+</html>
