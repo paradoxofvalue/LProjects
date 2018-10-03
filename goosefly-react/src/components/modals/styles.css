@@ -1,0 +1,255 @@
+
+.login-wrapper {
+  width: 430px;
+  padding: 20px 30px;
+}
+
+@media screen and (max-width: 768px) {
+.login-wrapper {
+
+    overflow: visible;
+    height: 100vh;
+    position: absolute;
+    max-height: unset;
+    width: 100%;
+    top: 0 !important;
+  }
+}
+
+.login-wrapper  div.row {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .modal .login div.row,
+  .modal .chat div.row {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+}
+
+.login-wrapper .modal-close {
+  display: none;
+}
+.modal .modal-footer {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .login-wrapper .modal-close {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.login-wrapper form a {
+  color: #05c568;
+  float: right;
+}
+.login-wrapper .col.input-field {
+  width: 100%;
+}
+
+.login-wrapper .input-field.col label {
+  left: 0;
+}
+.login-wrapper .modal-content {
+  padding: 0;
+}
+.login-wrapper .col .row {
+  margin: 0;
+}
+
+.login-wrapper form button  {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #05c568;
+  margin-top: 10px;
+  border: 1px solid #05c568;
+  border-radius: 20px;
+  line-height: 1;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.login-wrapper form button:hover,
+.login-wrapper form button:focus {
+  text-decoration: underline;
+  background-color: white;
+}
+
+.login-wrapper input:not([type]):focus:not([readonly]),
+.login-wrapper input[type=text]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=password]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=email]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=url]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=time]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=date]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=datetime]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=tel]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=number]:not(.browser-default):focus:not([readonly]),
+.login-wrapper input[type=search]:not(.browser-default):focus:not([readonly]),
+.login-wrapper textarea.materialize-textarea:focus:not([readonly]) {
+  border-color: #05c568;
+  box-shadow: 0 1px 0 0 #05c568;
+}
+
+.login-wrapper input:not([type]):focus:not([readonly])+label,
+.login-wrapper input[type=text]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=password]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=email]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=url]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=time]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=date]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=number]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper input[type=search]:not(.browser-default):focus:not([readonly])+label,
+.login-wrapper textarea.materialize-textarea:focus:not([readonly])+label {
+  color: #05c568;
+}
+
+.login-wrapper .modal-content h4 {
+display: none;
+}
+.login-wrapper [type="checkbox"]+span:not(.lever):before,
+.login-wrapper [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+  top: -4px;
+  left: -5px;
+  width: 12px;
+  height: 22px;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid #05c568;
+  border-bottom: 1px solid #05c568;
+  transform: rotate(40deg);
+  backface-visibility: hidden;
+  transform-origin: 100% 100%;
+}
+
+.login-wrapper [type="checkbox"]:checked+span:not(.lever):before {
+  top: -4px;
+  left: -5px;
+  width: 12px;
+  height: 22px;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid #05c568;
+  border-bottom: 1px solid #05c568;
+  transform: rotate(40deg);
+  backface-visibility: hidden;
+  transform-origin: 100% 100%;
+}
+
+.login-wrapper [type="checkbox"]+span:not(.lever):before,
+.login-wrapper [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  z-index: 0;
+  border: 1px solid #9e9e9e;
+  border-radius: 1px;
+  margin-top: 3px;
+  transition: .2s;
+}
+
+.login-wrapper label,
+.login-wrapper label {
+  left: 0;
+  transform-origin: 0;
+}
+
+.login-wrapper label:not(.label-icon).active,
+.login-wrapper label:not(.label-icon).active {
+  transform-origin: 0;
+  transform: translateY(-8px) scale(0.8);
+}
+.login-wrapper [type="checkbox"] ~ label:not(.label-icon).active  {
+  transform: translateY(0) scale(1);
+  transform-origin: 0;
+
+}
+
+.modal .login .row .col,
+.modal .chat .row .col {
+  padding: 0;
+}
+
+.modal .login .row .col.input-field,
+.modal .chat .row .col.input-field {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #chat {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+#chat h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.login .tabs {
+  margin-bottom: 10px;
+}
+
+.login .tabs li.tab {
+  width: 50%;
+  border: 1px solid #05c568;
+  height: 40px;
+  overflow: hidden;
+}
+
+.login .tabs li.tab:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.login .tabs li.tab:nth-child(2) {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.login .tabs li.tab a {
+  font-size: 1rem;
+  line-height: 40px;
+  color: #05c568;
+
+}
+
+.login .tabs li.tab a.active {
+  background-color: #05c568;
+  color: white;
+}
+
+.login .tabs .indicator {
+  display: none;
+}

@@ -1,0 +1,302 @@
+.good__wrapper {
+  display: block;
+  font-size: 0;
+}
+@media screen and (max-width: 768px) {
+  .good__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 240px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1170px) {
+  .good__wrapper {
+    padding-left: 30px;
+  }
+}
+.good__main-info, .good__share, .good__seller, .good__secondary-info {
+  display: inline-block;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1;
+  margin-bottom: 21px;
+  padding: 20px 30px;
+}
+.good__image-wrapper {
+  height: 440px;
+  width: 57.26%;
+  float: left;
+  margin: 0 20px 20px 0;
+  background-color: #e9ebee;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .good__image-wrapper {
+    order: 1;
+    width: 100%;
+    position: absolute;
+    top: 56px;
+    height: 260px;
+    left: 0;
+    margin: 0;
+  }
+}
+.good__image-wrapper .owl-nav.disabled {
+  display: none;
+}
+.good__image-wrapper .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+.good__image-wrapper .owl-dots .owl-dot {
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: rgba(5, 197, 104, 0.5);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.good__image-wrapper .owl-dots .owl-dot.active {
+  background-color: #05c568;
+}
+.good__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 440px;
+  overflow: hidden;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .good__slide {
+    height: 260px;
+  }
+}
+.good__slide img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .good__slide img {
+    height: 440px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .good__slide img {
+    min-height: 260px;
+    width: 100%;
+  }
+}
+.good__main-info {
+  height: 237px;
+  width: 31.62%;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .good__main-info {
+    width: 100%;
+    order: 2;
+  }
+}
+.good__main-info h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.good__main-info .price {
+  color: #05c568;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.good__main-info .price .currency {
+  font-size: 1rem;
+}
+.good__main-info .input-field .select-wrapper {
+  padding-left: 4rem;
+  width: 6rem;
+}
+.good__main-info .input-field .select-wrapper input.select-dropdown {
+  border: 0;
+}
+.good__main-info .input-field > label {
+  color: #1a1a1a;
+  top: 3px;
+}
+.good__main-info a.btn {
+  width: 100%;
+  max-width: 200px;
+  line-height: 35px;
+  color: #05c568;
+  border: 1px solid #05c568;
+  border-radius: 35px;
+  text-transform: none;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.good__main-info a.btn:hover {
+  text-decoration: underline;
+}
+.good__share {
+  height: 80px;
+  width: 31.62%;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .good__share {
+    order: 4;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 30px;
+  }
+}
+.good__share h6 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .good__share h6 {
+    margin-bottom: 15px;
+  }
+}
+.good__share .share__items {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+.good__seller {
+  height: 80px;
+  width: 31.62%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .good__seller {
+    order: 6;
+    width: 100%;
+  }
+}
+.good__seller h6 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.good__seller a {
+  color: #556b7f;
+  line-height: 2.5rem;
+}
+.good__seller a:hover {
+  text-decoration: underline;
+}
+.good__secondary-info {
+  width: 57.26%;
+  display: inline-block;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .good__secondary-info {
+    order: 3;
+    width: 100%;
+  }
+}
+.good__secondary-info .tabs {
+  height: 2rem;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.good__secondary-info .tabs .tab {
+  height: 2rem;
+  line-height: 2rem;
+}
+.good__secondary-info .tabs .tab a {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .good__secondary-info .tabs .indicator {
+    display: none;
+    visibility: hidden;
+  }
+}
+.good .info-wrapper section {
+  width: 770px;
+  position: relative;
+  padding-bottom: 0;
+  background-color: transparent;
+  padding: 0;
+}
+.good .info-wrapper section .wrapper__content {
+  border-radius: 4px;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  background-color: white;
+}
+.good .info-wrapper section .wrapper__content.wrap-img {
+  padding: 0;
+  height: 493px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.good .info-wrapper section .wrapper__content.wrap-img img {
+  width: 100%;
+}
+.good .info-wrapper section .wrapper__content .tabs .tab a {
+  font-size: 1.2rem;
+}
+.good .info-wrapper aside .good-info h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.good .info-wrapper aside .good-info .price {
+  color: #05c568;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.good .info-wrapper aside .good-info .price .currency {
+  font-size: 1rem;
+}
+.good .info-wrapper aside .good-info .input-field .select-wrapper {
+  padding-left: 4rem;
+  width: 6rem;
+}
+.good .info-wrapper aside .good-info .input-field .select-wrapper input.select-dropdown {
+  border: 0;
+}
+.good .info-wrapper aside .good-info .input-field > label {
+  color: #1a1a1a;
+}
+.good .info-wrapper aside .good-info a.btn {
+  width: 200px;
+  line-height: 35px;
+  color: #05c568;
+  border: 1px solid #05c568;
+  border-radius: 35px;
+  text-transform: none;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.good .info-wrapper aside .good-info a.btn:hover {
+  text-decoration: underline;
+}
+.good .info-wrapper aside .seller p {
+  font-weight: bold;
+  margin: 0;
+}
+.good .info-wrapper aside .seller p a {
+  font-weight: normal;
+  display: block;
+}

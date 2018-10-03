@@ -1,0 +1,234 @@
+header.navbar-fixed nav {
+  background-color: rgba(26, 26, 26, 0.99);
+}
+header.navbar-fixed nav .brand-logo img {
+  position: relative;
+  top: 4px;
+}
+header.navbar-fixed nav div.nav-wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  header.navbar-fixed nav div.nav-wrapper {
+    padding: 0 10px;
+  }
+}
+header.navbar-fixed nav div.nav-wrapper .hide-on-med-and-down {
+  margin-left: 100px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right {
+  margin-left: 0;
+  float: right;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right #lang {
+  width: auto !important;
+  min-width: auto !important;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right #lang li {
+  width: 72px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.notification {
+  position: relative;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.notification a:after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #16c972;
+  position: absolute;
+  display: block;
+  top: 16px;
+  border-radius: 50%;
+  right: 14px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li a img {
+  position: relative;
+  top: 4px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.chat a img {
+  top: 6px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user {
+  margin-right: 95px;
+  position: relative;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user a img {
+  top: 6px;
+  margin-right: 5px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user .profile {
+  height: 0px;
+  transition: 0.3s ease;
+  display: none;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile {
+  display: block;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: absolute;
+  right: 0;
+  width: 291px;
+  background-color: black;
+  height: 171px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile__wrapper {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #e9ebee;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile__image-wrapper {
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile__image-wrapper img {
+  height: 60px;
+  width: auto;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile__text-wrapper h6 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile__text-wrapper a {
+  font-size: 0.9rem;
+  color: #16c972;
+  padding: 0;
+  line-height: 1rem;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile__text-wrapper a:hover {
+  text-decoration: underline;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile__log-out {
+  text-align: center;
+  transition: 0.3s ease;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile__log-out i {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.user.open .profile__log-out:hover {
+  color: #a00000;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.search {
+  margin-left: 30px;
+  position: absolute;
+  right: 0;
+  transition: 0.3s ease;
+  width: 64px;
+  text-align: center;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.search.open {
+  display: flex;
+  width: 400px;
+  height: 64px;
+  background-color: #1a1a1a;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.search.open a {
+  display: none;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.search.open .input-field {
+  display: inline-flex;
+  width: 90%;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.search.open .input-field input {
+  color: white;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e9eeee;
+  line-height: 1;
+  height: 2rem;
+  position: relative;
+  top: 15px;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.search.open .input-field input:focus {
+  border-color: #16c972;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.search.open .input-field .prefix {
+  top: 0px;
+  cursor: pointer;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.search .input-field {
+  display: none;
+}
+header.navbar-fixed nav div.nav-wrapper ul.pull-right li.search:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: white;
+  height: 30px;
+  top: 16px;
+  left: -18px;
+}
+header.navbar-fixed nav div.nav-wrapper ul i.right {
+  margin-left: 0;
+}
+header.navbar-fixed nav div.nav-wrapper ul #categories,
+header.navbar-fixed nav div.nav-wrapper ul #lang {
+  top: 64px !important;
+  height: auto !important;
+}
+header.navbar-fixed nav div.nav-wrapper ul #categories.dropdown-content li,
+header.navbar-fixed nav div.nav-wrapper ul #lang.dropdown-content li {
+  background-color: black;
+  min-height: auto;
+}
+header.navbar-fixed nav div.nav-wrapper ul #categories.dropdown-content li:hover,
+header.navbar-fixed nav div.nav-wrapper ul #lang.dropdown-content li:hover {
+  background-color: #16c972;
+}
+header.navbar-fixed nav div.nav-wrapper ul #categories.dropdown-content li a,
+header.navbar-fixed nav div.nav-wrapper ul #categories.dropdown-content li span,
+header.navbar-fixed nav div.nav-wrapper ul #lang.dropdown-content li a,
+header.navbar-fixed nav div.nav-wrapper ul #lang.dropdown-content li span {
+  color: white;
+  font-size: 15px;
+  padding: 10px 16px;
+}
+header.navbar-fixed nav div.nav-wrapper ul li a {
+  font-size: 16px;
+}
+header.navbar-fixed nav div.nav-wrapper ul li.active {
+  background-color: black;
+}
+header.navbar-fixed nav div.nav-wrapper ul li:hover {
+  background-color: black;
+}
+
+.sidenav-overlay {
+  z-index: 200;
+}
+
+.sidenav {
+  background-color: #1a1a1a;
+}
+.sidenav li a {
+  color: white;
+}
+.sidenav ul {
+  padding-left: 30px;
+}
+
+.visible-in-992 {
+  display: none;
+  height: 64px;
+  width: 64px;
+  text-align: center;
+  float: right;
+}
+.visible-in-992 img {
+  position: relative;
+  top: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .visible-in-992 {
+    display: inline-block;
+  }
+}

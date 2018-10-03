@@ -1,0 +1,30 @@
+section.wrapper .pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+section.wrapper .pagination li {
+  box-sizing: border-box;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid transparent;
+}
+section.wrapper .pagination li.active {
+  border-color: #16c972;
+}
+section.wrapper .pagination li.active a {
+  color: #16c972;
+}
+section.wrapper .pagination li:first-child, section.wrapper .pagination li:last-child {
+  border-color: #afbfc9;
+}
+section.wrapper .pagination li:first-child a, section.wrapper .pagination li:last-child a {
+  color: #afbfc9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
